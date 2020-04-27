@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div class="Container">
+     <header class="header">
+        <h1>FreeCodeCamp Form</h1>
+        <p>Thankyou for taking the time to help us improve 
+            the platform</p>
+     </header>
+    
+        <form action="#">
+            <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter your email" required>
+            </div>
+            <div>
+            <label for="age">Age(optional)</label>
+            <input id="age" type="text" placeholder="Enter your Age" >
+            </div>
+            <div>
+            <p>Which option best describes your current 
+                role?</p>
+                <select name="current-role" id="current-role"required>
+                <option disabled selected value>Select an option</option>
+                <option value="Student">Student</option>
+                <option  value="Full-Time-Job">Full Time Job</option>
+                <option value="Full-Time-Learner">Full Time Learnner</option>
+                <option value="Prefer-not-to-say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <p>Would you recommend FreeCodeCamp 
+            to a friend?</p>
+          <div>
+            <input id="definitely" type="radio" name="definitely-maybe-notsure" value="definitely">
+            <label for="definitely">Definitely</label>
+         </div>
+         <div>
+            <input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe">
+            <label for="maybe">Maybe</label>
+         </div>
+         <div>
+            <input id="notsure" type="radio" name="definitely-maybe-notsure" value="notsure">
+            <label for="notsure">Not sure</label>
+         </div>
+        <p>What is your favorite feature of Free Code Camp?</p>
+        <select id="most-like" name="mostLike" class="" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+          <p>
+              What woul you like to see  improved?(check all that apply)
+          </p>
+          <div>
+          <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+          <label for="front-end">Front-end Projects</label>
+        </div>
+        <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Back-end Projects</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Data Visualization</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Challenges</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Open Source Community</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Gitter help rooms</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Videos</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">City Meetups</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Wiki</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Forum</label>
+          </div>
+          <div>
+            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+            <label for="front-end">Additional Courses</label>
+          </div>
+          <div>
+          <label for="comments-suggestions">Any comments or ssuggestion?</label>
+          <input id="comments-suggestions" type="text" placeholder="Enter your comment here...">
+        </div>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+    <div  id="ejemplo"></div>
+</html>
