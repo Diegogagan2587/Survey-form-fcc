@@ -29,7 +29,7 @@
             <div class="form-group">
             <p>Which option best describes your current 
                 role?</p>
-                <select name="current-role" id="current-role"required>
+                <select name="role" id="dropdown" class="form-control" required>
                 <option disabled selected value>Select an option</option>
                 <option value="Student">Student</option>
                 <option  value="Full-Time-Job">Full Time Job</option>
@@ -42,21 +42,21 @@
         <p>Would you recommend FreeCodeCamp 
             to a friend?</p>
           <div>
-            <input id="definitely" type="radio" name="definitely-maybe-notsure" value="definitely">
+            <input id="definitely" type="radio" name="definitely-maybe-notsure" value="definitely"  class="input-radio">
             <label for="definitely">Definitely</label>
          </div>
          <div>
-            <input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe">
+            <input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe" class="input-radio">
             <label for="maybe">Maybe</label>
          </div>
          <div>
-            <input id="notsure" type="radio" name="definitely-maybe-notsure" value="notsure">
+            <input id="notsure" type="radio" name="definitely-maybe-notsure" value="notsure" class="input-radio">
             <label for="notsure">Not sure</label>
          </div>
          </div>
          <div class="form-group">
         <p>What is your favorite feature of Free Code Camp?</p>
-        <select id="most-like" name="mostLike" class="" required>
+        <select id="most-like" name="mostLike" class="form-control" required>
             <option disabled selected value>Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="projects">Projects</option>
@@ -66,58 +66,64 @@
           </div>
           <div class="form-group">
           <p>
-              What woul you like to see  improved?(check all that apply)
+              What woul you like to see  improved?
+              <span class="clue">(check all that apply)</span>
           </p>
           <div>
-          <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
+          <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end" class="input-checkbox">
           <label for="front-end">Front-end Projects</label>
         </div>
         <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Back-end Projects</label>
+            <input id="Back-end-Projects" type="checkbox" name="improved-checkbox" value="Back-end-Projects" class="input-checkbox">
+            <label for="Back-end-Projects">Back-end Projects</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Data Visualization</label>
+            <input id="Data-Visualization" type="checkbox" name="improved-checkbox" value="Data-Visualization" class="input-checkbox">
+            <label for="Data-Visualization">Data Visualization</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Challenges</label>
+            <input id="challenges" type="checkbox" name="improved-checkbox" value="challenges" class="input-checkbox">
+            <label for="challenges">Challenges</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Open Source Community</label>
+            <input id="open-source-community" type="checkbox" name="improved-checkbox" value="open-source-community" class="input-checkbox">
+            <label for="open-source-community">Open Source Community</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Gitter help rooms</label>
+            <input id="gitter-help-rooms" type="checkbox" name="improved-checkbox" value="gitter-help-rooms" class="input-checkbox">
+            <label for="gitter-help-rooms">Gitter help rooms</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Videos</label>
+            <input id="videos" type="checkbox" name="improved-checkbox" value="videos" class="input-checkbox">
+            <label for="videos">Videos</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">City Meetups</label>
+            <input id="city-meetups" type="checkbox" name="improved-checkbox" value="city-meetups" class="input-checkbox">
+            <label for="city-meetups">City Meetups</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Wiki</label>
+            <input id="wiki" type="checkbox" name="improved-checkbox" value="wiki" class="input-checkbox">
+            <label for="wiki">Wiki</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Forum</label>
+            <input id="forum" type="checkbox" name="improved-checkbox" value="forum" class="input-checkbox">
+            <label for="forum">Forum</label>
           </div>
           <div>
-            <input id="front-end" type="checkbox" name="improved-checkbox" value="Front-end">
-            <label for="front-end">Additional Courses</label>
+            <input id="additional-courses" type="checkbox" name="improved-checkbox" value="additional-courses" class="input-checkbox">
+            <label for="additional-courses">Additional Courses</label>
             </div>
           </div>
-          <div>
-          <label for="comments-suggestions">Any comments or ssuggestion?</label>
-          <input id="comments-suggestions" type="text" placeholder="Enter your comment here...">
+          <div  class="form-group">
+          <label for="comments">Any comments or ssuggestion?</label>
+          <textarea id="comments" placeholder="Enter your comment here..."
+          class="form-control"></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
         </form>
     </div>
     </body>
